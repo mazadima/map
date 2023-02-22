@@ -6,7 +6,7 @@ ymaps.ready(function () {
             controls: ['zoomControl']
         }),
         objectManager = new ymaps.ObjectManager();
-    map.controls.get('zoomControl').options.set({size: 'small'});
+    map.controls.get('zoomControl').options.set({size: 'big'});
     // Загружаем GeoJSON файл, экспортированный из Конструктора карт.
     $.getJSON('geoObjects.geojson')
         .done(function (geoJson) {
